@@ -15,7 +15,7 @@ Prepared by **Дмитрий Лукашов (Dmitry Lukashov)** as an open compo
 
 ## First result
 
-Download the [v0.1.0 release](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0)
+Download the [v0.1.1 release](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1)
 and unpack it into a new folder. From that folder:
 
 ```bash

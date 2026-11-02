@@ -1,6 +1,6 @@
 {
   "id": "company-knowledge-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Дмитрий Лукашов",
   "scope": "Standalone offline Python CLI that builds an explicit allowlist snapshot of UTF-8 Markdown/text documents and returns exact normalized-word matches with source lines and SHA-256. Search includes supplied active documents only and requires unchanged indexed source bytes. No generated answer, semantic search, authority/current-version selection, model, network, API, MCP or private-core installation.",
   "rights_status": "original_code_reviewed",
