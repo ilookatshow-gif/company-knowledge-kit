@@ -1,0 +1,7 @@
+{
+  "documents": [
+    {"id": "refund-current", "path": "documents/refund-current.md", "title": "Учебный регламент возврата", "status": "active", "version": "2"},
+    {"id": "refund-old", "path": "documents/refund-old.md", "title": "Архивный учебный регламент", "status": "archived", "version": "1"},
+    {"id": "support", "path": "documents/support.md", "title": "Учебная поддержка", "status": "active", "version": "1"}
+  ]
+}
