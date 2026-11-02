@@ -8,6 +8,7 @@ from pathlib import Path
 import sys
 
 NAME = "company-knowledge-kit"
+VERSION = "0.1.1"
 MARKER = ".company-knowledge-install.json"
 FILES = ("knowledge_kit.py", "uninstall.py", "LICENSE", "NOTICE.md",
          "examples/corpus.json", "examples/documents/refund-current.md",
@@ -33,7 +34,7 @@ def uninstall(prefix, bin_dir):
         raise UninstallError("INSTALL_MARKER_MISSING")
     info = json.loads(marker.read_text(encoding="utf-8"))
     if (not isinstance(info, dict) or info.get("kind") != "company-knowledge-kit-install"
-            or info.get("version") != "0.1.0" or info.get("prefix") != str(prefix)
+            or info.get("version") != VERSION or info.get("prefix") != str(prefix)
             or info.get("binary") != str(binary) or not isinstance(info.get("files"), dict)
             or set(info["files"]) != set(FILES)):
         raise UninstallError("INSTALL_MARKER_INVALID")
@@ -46,7 +47,7 @@ def uninstall(prefix, bin_dir):
     optional = prefix / ".onboarded"
     if optional.exists():
         safe_path(optional)
-        if not optional.is_file() or optional.stat().st_size != 6 or optional.read_bytes() != b"0.1.0\n":
+        if not optional.is_file() or optional.stat().st_size != 6 or optional.read_bytes() != (VERSION + "\n").encode("ascii"):
             raise UninstallError("ONBOARD_MARKER_MODIFIED")
         owned.append((optional, None))
     for path, unused in owned:

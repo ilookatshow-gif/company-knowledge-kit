@@ -10,7 +10,7 @@ import sys
 import tempfile
 import unicodedata
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 MAX_FILES = 200
 MAX_FILE_BYTES = 1024 * 1024
 MAX_TOTAL_BYTES = 5 * 1024 * 1024

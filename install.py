@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 
 NAME = "company-knowledge-kit"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 FILES = ("knowledge_kit.py", "uninstall.py", "LICENSE", "NOTICE.md",
          "examples/corpus.json", "examples/documents/refund-current.md",
          "examples/documents/refund-old.md", "examples/documents/support.md")

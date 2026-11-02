@@ -15,7 +15,7 @@ Python 3.9+, стандартная библиотека. Кабинет, API-к
 
 ## Первый результат
 
-Скачайте [релиз v0.1.0](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.0)
+Скачайте [релиз v0.1.1](https://github.com/ilookatshow-gif/company-knowledge-kit/releases/tag/v0.1.1)
 и распакуйте в новую папку. Из этой папки:
 
 ```bash
